@@ -77,11 +77,7 @@ db.users.find({
 // 15. select all the users whose name has charater D in it
 db.users.find({ name: { $regex: "DuBuque" } });
 
-// $where
-// 15.1 select all the users where age is odd number
-db.users.find({
-  $where: this.age === 46,
-});
+
 
 // Projection
 // 16. Select name, id, email, website from the users coollection
